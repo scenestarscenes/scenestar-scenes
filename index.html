@@ -4,55 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scenestar Scenes - Your Space. On Autopilot.</title>
+    <meta name="description" content="Scenestar Scenes Ltd: smart home automation, security, IT solutions and renewable energy for developers, property and home owners in Lagos and Abeokuta.">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="style.css">
     <!-- FontAwesome used for navigation chevron, locks, and system icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <!-- =============================================
        HEADER & NAVIGATION
     ============================================= -->
     <header>
         <div class="container">
-            <div class="logo">Scenestar Scenes</div>
-            <nav>
+            <a href="#top" class="logo">
+                <img src="assets/img/logo.png" alt="" width="48" height="48">
+                <span>Scenestar Scenes</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="site-nav" aria-label="Main">
                 <ul>
                     <li class="dropdown">
-                        <a href="#">Solutions <i class="fa fa-chevron-down"></i></a>
+                        <a href="#about">Solutions <i class="fa fa-chevron-down"></i></a>
                         <ul class="dropdown-content">
-                            <li><a href="#">Residential</a></li>
-                            <li><a href="#">Commercial</a></li>
+                            <li><a href="#pricing">Home owners</a></li>
+                            <li><a href="#about">Developers &amp; property</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="header-actions">
+                    <a href="#contact" class="quote-btn">Request a Quote</a>
+                </div>
             </nav>
-            <div class="header-actions">
-                <a href="#" class="login-btn"><i class="fas fa-lock"></i> Login</a>
-                <a href="#" class="quote-btn">Request a Quote</a>
-            </div>
         </div>
     </header>
+
+    <main id="main">
 
     <!-- =============================================
        HERO / JUMBOTRON SECTION
     ============================================= -->
-    <section class="hero">
+    <section class="hero" id="top">
         <div class="container hero-content">
             <h1>Your Domain. Intelligently Controlled.</h1>
             <p>Orchestrating ambiance for the modern home.<br>A smarter life, effortlessly.</p>
-            <a href="#" class="cta-button">Explore Our Solutions</a>
+            <a href="#services" class="cta-button">Explore Our Solutions</a>
         </div>
     </section>
 
     <!-- =============================================
        SERVICES CARD SECTION
     ============================================= -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="card-grid">
 
@@ -64,14 +81,14 @@
                             <i class="fas fa-leaf"></i>
                             <i class="fas fa-thermometer-half"></i>
                         </div>
-                        <h3>Comfort & Energy</h3>
+                        <h3>Comfort &amp; Energy</h3>
                         <h4>Services</h4>
                         <ul>
                             <li>Smart Lighting</li>
                             <li>Thermostat/AC</li>
                             <li>Shades</li>
                         </ul>
-                        <a href="#" class="card-link">Learn More</a>
+                        <a href="#group-comfort" class="card-link">Learn More</a>
                     </div>
                 </div>
 
@@ -91,7 +108,7 @@
                             <li>Alarms</li>
                             <li>Video Doorbell</li>
                         </ul>
-                        <a href="#" class="card-link">Explore Security</a>
+                        <a href="#group-security" class="card-link">Explore Security</a>
                     </div>
                 </div>
 
@@ -111,7 +128,7 @@
                             <li>Access Control</li>
                             <li>Guest Entry</li>
                         </ul>
-                        <a href="#" class="card-link">Discover Access</a>
+                        <a href="#group-access" class="card-link">Discover Access</a>
                     </div>
                 </div>
 
@@ -120,31 +137,391 @@
     </section>
 
     <!-- =============================================
+       ABOUT: OVERVIEW, GOALS & OBJECTIVES
+    ============================================= -->
+    <section class="section" id="about">
+        <div class="container about-grid">
+            <div class="about-text">
+                <h2>Overview</h2>
+                <p class="lead">Scenestar Scenes Ltd covers construction, smart home, security, IT solutions and renewable energy. This proposal is for developers, property owners and home owners.</p>
+                <p>It outlines the design, supply, installation, programming, testing and commissioning of smart home and property automation. The system gives you convenient control of all lighting, air conditioning, security, surveillance, entertainment and other existing devices and appliances through a mobile app, a voice assistant and remote access.</p>
+
+                <h3>Areas covered in the package</h3>
+                <ul class="areas">
+                    <li>Main entrance</li>
+                    <li>Living room</li>
+                    <li>Dining room</li>
+                    <li>Kitchen</li>
+                    <li>Bedroom</li>
+                </ul>
+            </div>
+            <figure class="about-figure">
+                <img src="assets/img/smart-living.jpg" alt="Illustration of a family controlling lights, screen and speakers in a living room by voice and remote" width="800" height="800" loading="lazy">
+            </figure>
+        </div>
+
+        <div class="container goals">
+            <h2>Goals &amp; objectives</h2>
+            <p class="lead">The proposed automation solutions aim to:</p>
+            <ol>
+                <li>Automate lighting and HVAC systems in the property.</li>
+                <li>Provide remote control from anywhere in the world.</li>
+                <li>Monitor energy consumption and improve energy efficiency.</li>
+                <li>Enhance security and safety through smart monitoring of flood, fire and theft.</li>
+                <li>Integrate all smart devices for use in a single application.</li>
+                <li>Provide a scalable platform for future expansion and improvement, in line with future technologies.</li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- =============================================
+       SPECIFICATIONS OF WORK
+    ============================================= -->
+    <section class="section section-alt" id="specifications">
+        <div class="container">
+            <h2>Specifications of work</h2>
+            <ul class="spec-list">
+                <li>Lighting automation</li>
+                <li>Motion sensors</li>
+                <li>Mobile control</li>
+                <li>Indoor monitor</li>
+                <li>Streaming services</li>
+                <li>Scene control</li>
+                <li>Curtain automation</li>
+                <li>Smart thermostat</li>
+                <li>Security</li>
+                <li>Door/window sensors</li>
+                <li>Video intercom</li>
+                <li>Visitor communication</li>
+                <li>Wi-Fi optimization</li>
+                <li>Scheduling</li>
+                <li>Sunrise/sunset automation</li>
+                <li>Remote control</li>
+                <li>Smart doors</li>
+                <li>Gate automation</li>
+                <li>CCTV integration</li>
+                <li>Multi-room audio</li>
+                <li>UPS backup</li>
+                <li>Dimming lights</li>
+                <li>Air conditioning control</li>
+                <li>Temperature scheduling</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =============================================
+       SMART FEATURES (DEFINITIONS)
+    ============================================= -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2>Smart features</h2>
+            <p class="lead">What each feature does once it is installed.</p>
+
+            <details class="feature-group" id="group-comfort" open>
+                <summary>Comfort &amp; energy</summary>
+                <dl>
+                    <div><dt>Smart lighting</dt><dd>Lights that set any mood in a zone, based on the user's aesthetic preferences and requirements.</dd></div>
+                    <div><dt>Light control</dt><dd>Energy-saving smart control of all indoor and outdoor lights.</dd></div>
+                    <div><dt>HVAC control</dt><dd>Smart control for installed air conditioners and extractors.</dd></div>
+                    <div><dt>Curtain automation</dt><dd>Curtains controlled by voice, phone, remote control and cloud connectivity.</dd></div>
+                    <div><dt>Gadget control</dt><dd>Intelligent power management, automated convenience routines, and safety and maintenance overrides, with voice and remote control of all appliances and gadgets in a space.</dd></div>
+                    <div><dt>Machine control</dt><dd>Smart, centralized control of all equipment for seamless operation, monitoring and scheduling, including automated oversight and power management for every machine, gadget and piece of equipment in a zone.</dd></div>
+                    <div><dt>Sensors</dt><dd>Presence sensors switch lights on with motion. Contact sensors secure doors and trigger guest-welcome and routine actions. Humidity sensors trigger the air conditioner based on the required room temperature.</dd></div>
+                </dl>
+            </details>
+
+            <details class="feature-group" id="group-security">
+                <summary>Security &amp; safety</summary>
+                <dl>
+                    <div><dt>Surveillance</dt><dd>4K cameras with real-time HD footage and 365 days of storage backup.</dd></div>
+                    <div><dt>Security system</dt><dd>Unifies perimeter defense, video surveillance, access control and hazard detection in one centralized, real-time management network.</dd></div>
+                    <div><dt>Laser fencing</dt><dd>A perimeter defense system that flags breaches and triggers connected security responses without obstructing the property's appearance.</dd></div>
+                    <div><dt>Fire aware</dt><dd>Smoke, thermal and optical sensors with automated building responses to detect fire hazards early, contain their spread and protect lives and property.</dd></div>
+                    <div><dt>Flood aware</dt><dd>Early detection of floods and water leaks, with automated triggers that protect the property from damage caused by heavy rainfall, rising outdoor water levels or severe internal leaks.</dd></div>
+                </dl>
+            </details>
+
+            <details class="feature-group" id="group-access">
+                <summary>Access &amp; entry</summary>
+                <dl>
+                    <div><dt>Access control</dt><dd>Doors unlock by facial recognition, fingerprint, passcode, palm, remote or access card.</dd></div>
+                    <div><dt>Gate automation</dt><dd>Pedestrian and vehicle access control at the property perimeter. Opening, closing and verification are automated to streamline traffic flow, strengthen perimeter security and remove manual gate operation.</dd></div>
+                </dl>
+            </details>
+
+            <details class="feature-group" id="group-sound">
+                <summary>Sound, voice &amp; communication</summary>
+                <dl>
+                    <div><dt>Sound automation</dt><dd>Sound from the entertainment unit is processed through quality amplifiers and in-ceiling speakers positioned strategically in each zone.</dd></div>
+                    <div><dt>Streaming assistant</dt><dd>Music commands by voice and AirPlay.</dd></div>
+                    <div><dt>Voice assistant</dt><dd>Hands-free control of amenities and facility services through natural spoken commands.</dd></div>
+                    <div><dt>Intercom</dt><dd>Real-time two-way audio communication between zones in a structure.</dd></div>
+                    <div><dt>Wi-Fi optimization</dt><dd>Stable internet across the whole structure.</dd></div>
+                </dl>
+            </details>
+
+            <details class="feature-group" id="group-power">
+                <summary>Power &amp; backup</summary>
+                <dl>
+                    <div><dt>Smart home backup</dt><dd>Renewable electricity keeps smart-home communication with the user running by supplying power to the required smart devices, even when all supply (grid, inverter and generator) fails.</dd></div>
+                    <div><dt>Functional backup</dt><dd>A smart load system that prioritizes critical loads during an outage, switching seamlessly between solar, battery and grid power so essential devices keep running efficiently and consumption stays managed.</dd></div>
+                    <div><dt>Total backup</dt><dd>A system that carries the entire energy demand during an outage, switching seamlessly between solar, battery and grid power to keep all appliances, gadgets and devices running.</dd></div>
+                    <div><dt>Automatic transfer switch (ATS)</dt><dd>Switches between grid, generator and inverter automatically, without human input or errors.</dd></div>
+                    <div><dt>Automatic voltage regulator (AVR)</dt><dd>Stabilizes and regulates the voltage supplied to the property and protects all appliances, machines and gadgets from electrical surges.</dd></div>
+                </dl>
+            </details>
+        </div>
+    </section>
+
+    <!-- =============================================
+       PROJECT VISUALS
+    ============================================= -->
+    <section class="section section-alt" id="gallery">
+        <div class="container">
+            <h2>Project visuals</h2>
+            <div class="gallery">
+                <figure class="g-wide">
+                    <img src="assets/img/stair-lighting.jpg" alt="Staircase with glass railing lit by LED strips along each step" width="1024" height="572" loading="lazy">
+                    <figcaption>Step lighting along a staircase</figcaption>
+                </figure>
+                <figure class="g-wide">
+                    <img src="assets/img/living-room.jpg" alt="Living room with a wall control panel, ceiling speaker, voice assistant and smart switch" width="1024" height="559" loading="lazy">
+                    <figcaption>Living room with wall control panel, ceiling speaker and smart switch</figcaption>
+                </figure>
+                <figure class="g-third">
+                    <img src="assets/img/gate-laser-fence.jpg" alt="Sliding gate with its motor unit and a laser fence along the wall" width="1024" height="572" loading="lazy">
+                    <figcaption>Automated gate with laser fence</figcaption>
+                </figure>
+                <figure class="g-third">
+                    <img src="assets/img/solar-backup.jpg" alt="Solar panels behind a stacked battery backup unit" width="500" height="455" loading="lazy">
+                    <figcaption>Solar panels with battery backup</figcaption>
+                </figure>
+                <figure class="g-third g-diagram">
+                    <img src="assets/img/mesh-wifi.jpg" alt="Floor plan showing mesh Wi-Fi nodes covering every room of a flat" width="1200" height="654" loading="lazy">
+                    <figcaption>Mesh Wi-Fi coverage plan for a flat</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+       PRICING
+    ============================================= -->
+    <section class="section" id="pricing">
+        <div class="container">
+            <h2>Pricing by area</h2>
+            <p class="lead">Prices are in naira (₦). Each area lists its devices plus a separate installation and programming fee.</p>
+
+            <div class="tabs" role="tablist" aria-label="Pricing areas">
+                <button type="button" role="tab" id="tab-flats" aria-controls="panel-flats" aria-selected="true">Flats</button>
+                <button type="button" role="tab" id="tab-living" aria-controls="panel-living" aria-selected="false" tabindex="-1">Living + dining room</button>
+                <button type="button" role="tab" id="tab-kitchen" aria-controls="panel-kitchen" aria-selected="false" tabindex="-1">Kitchen</button>
+                <button type="button" role="tab" id="tab-bedroom" aria-controls="panel-bedroom" aria-selected="false" tabindex="-1">Bedroom, closet &amp; toilet</button>
+            </div>
+
+            <div class="price-panel" role="tabpanel" id="panel-flats" aria-labelledby="tab-flats">
+                <table>
+                    <caption>General deliverables for flats</caption>
+                    <thead><tr><th scope="col">Item</th><th scope="col">Amount</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Wi-Fi optimization</th><td>₦800,000</td></tr>
+                        <tr><th scope="row">Surveillance</th><td>₦750,500</td></tr>
+                        <tr><th scope="row">Fire aware</th><td>₦150,000</td></tr>
+                        <tr><th scope="row">Flood aware</th><td>₦200,000</td></tr>
+                        <tr><th scope="row">Smart security system</th><td>₦455,000</td></tr>
+                        <tr class="fee"><th scope="row">Installation &amp; programming fee</th><td>₦300,000</td></tr>
+                    </tbody>
+                    <tfoot><tr><th scope="row">Total</th><td>₦2,655,500</td></tr></tfoot>
+                </table>
+            </div>
+
+            <div class="price-panel" role="tabpanel" id="panel-living" aria-labelledby="tab-living" hidden>
+                <table>
+                    <caption>Living + dining room</caption>
+                    <thead><tr><th scope="col">Item</th><th scope="col">Amount</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Sensor</th><td>₦150,000</td></tr>
+                        <tr><th scope="row">Access control</th><td>₦350,000</td></tr>
+                        <tr><th scope="row">Light control</th><td>₦350,000</td></tr>
+                        <tr><th scope="row">HVAC control</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">Surveillance viewing</th><td>₦120,000</td></tr>
+                        <tr><th scope="row">Smart lighting</th><td>₦800,000</td></tr>
+                        <tr><th scope="row">Sound automation</th><td>₦550,000</td></tr>
+                        <tr><th scope="row">Curtain automation</th><td>₦480,000</td></tr>
+                        <tr><th scope="row">Gadget control</th><td>₦200,000</td></tr>
+                        <tr><th scope="row">Voice assistant</th><td>₦350,000</td></tr>
+                        <tr><th scope="row">Streaming assistant</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">Intercom</th><td>₦100,000</td></tr>
+                        <tr><th scope="row">Control module</th><td>₦250,000</td></tr>
+                        <tr class="fee"><th scope="row">Installation &amp; programming fee</th><td>₦150,000</td></tr>
+                    </tbody>
+                    <tfoot><tr><th scope="row">Total</th><td>₦4,350,000</td></tr></tfoot>
+                </table>
+            </div>
+
+            <div class="price-panel" role="tabpanel" id="panel-kitchen" aria-labelledby="tab-kitchen" hidden>
+                <table>
+                    <caption>Kitchen</caption>
+                    <thead><tr><th scope="col">Item</th><th scope="col">Amount</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Sound automation</th><td>₦200,000</td></tr>
+                        <tr><th scope="row">Light control</th><td>₦135,000</td></tr>
+                        <tr><th scope="row">HVAC control</th><td>₦100,000</td></tr>
+                        <tr><th scope="row">Curtain automation</th><td>₦220,000</td></tr>
+                        <tr><th scope="row">Voice assistant</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">Control module</th><td>₦200,000</td></tr>
+                        <tr><th scope="row">Smart security system</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">Gadget control</th><td>₦100,000</td></tr>
+                        <tr><th scope="row">Streaming assistant</th><td>₦250,000</td></tr>
+                        <tr class="fee"><th scope="row">Installation &amp; programming fee</th><td>₦200,000</td></tr>
+                    </tbody>
+                    <tfoot><tr><th scope="row">Total</th><td>₦1,905,000</td></tr></tfoot>
+                </table>
+            </div>
+
+            <div class="price-panel" role="tabpanel" id="panel-bedroom" aria-labelledby="tab-bedroom" hidden>
+                <table>
+                    <caption>Bedroom, closet &amp; toilet</caption>
+                    <thead><tr><th scope="col">Item</th><th scope="col">Amount</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Surveillance viewing</th><td>₦120,000</td></tr>
+                        <tr><th scope="row">Smart lighting</th><td>₦500,000</td></tr>
+                        <tr><th scope="row">Access control</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">HVAC control</th><td>₦100,000</td></tr>
+                        <tr><th scope="row">Curtain automation</th><td>₦480,000</td></tr>
+                        <tr><th scope="row">Intercom</th><td>₦100,000</td></tr>
+                        <tr><th scope="row">Sound automation</th><td>₦350,000</td></tr>
+                        <tr><th scope="row">Streaming assistant</th><td>₦250,000</td></tr>
+                        <tr><th scope="row">Voice assistant</th><td>₦350,000</td></tr>
+                        <tr><th scope="row">Light control</th><td>₦200,000</td></tr>
+                        <tr><th scope="row">Control module</th><td>₦250,000</td></tr>
+                        <tr class="fee"><th scope="row">Installation &amp; programming fee</th><td>₦150,000</td></tr>
+                    </tbody>
+                    <tfoot><tr><th scope="row">Total</th><td>₦3,100,000</td></tr></tfoot>
+                </table>
+            </div>
+
+            <div class="addon">
+                <div>
+                    <h3>Functional backup</h3>
+                    <p>A smart load system that keeps critical loads running through an outage by switching between solar, battery and grid power. Listed separately from the project total below.</p>
+                </div>
+                <p class="addon-price">₦5,500,000</p>
+            </div>
+
+            <div class="summary">
+                <table>
+                    <caption>Project cost summary</caption>
+                    <thead><tr><th scope="col">Description</th><th scope="col">Amount</th></tr></thead>
+                    <tbody>
+                        <tr><th scope="row">Flats</th><td>₦2,655,500</td></tr>
+                        <tr><th scope="row">Living + dining room</th><td>₦4,350,000</td></tr>
+                        <tr><th scope="row">Kitchen</th><td>₦1,905,000</td></tr>
+                        <tr><th scope="row">Bedroom, closet &amp; toilet</th><td>₦3,100,000</td></tr>
+                        <tr><th scope="row">Testing &amp; commissioning</th><td>₦800,000</td></tr>
+                        <tr><th scope="row">Training</th><td>₦500,000</td></tr>
+                    </tbody>
+                </table>
+                <div class="grand-total">
+                    <span>Grand total</span>
+                    <strong>₦13,310,500</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============================================
+       INSTALLATION TIMELINE
+    ============================================= -->
+    <section class="section section-alt" id="timeline">
+        <div class="container">
+            <h2>Installation timeline</h2>
+
+            <div class="timeline-bar" aria-hidden="true">
+                <span style="flex: 14">Cabling</span>
+                <span style="flex: 10">Devices</span>
+                <span style="flex: 10">Programming</span>
+                <span style="flex: 3"></span>
+                <span style="flex: 2"></span>
+            </div>
+
+            <ol class="timeline">
+                <li><span class="step">First fix cabling</span><span class="days">14 days</span></li>
+                <li><span class="step">Devices installation</span><span class="days">10 days</span></li>
+                <li><span class="step">Programming</span><span class="days">10 days</span></li>
+                <li><span class="step">Testing</span><span class="days">3 days</span></li>
+                <li><span class="step">Client training</span><span class="days">2 days</span></li>
+            </ol>
+
+            <ul class="notes">
+                <li>The timeframe is subject to the speed of project execution.</li>
+                <li>A minimum of 6 weeks is required to carry out all required procurements.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- =============================================
+       CONTACT
+    ============================================= -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="lead">Tell us about your property and we will send a quote.</p>
+
+            <div class="contact-grid">
+                <div>
+                    <h3>Lagos office</h3>
+                    <address>10 Yomi Ajetunmobi Street,<br>Eti-Osa, Lekki,<br>Lagos State</address>
+                </div>
+                <div>
+                    <h3>Abeokuta office</h3>
+                    <address>4 Lukosi Rd, BHD Federal Secretariat,<br>Oke Mosan, Abeokuta,<br>Ogun State</address>
+                </div>
+                <div>
+                    <h3>Reach us</h3>
+                    <p><i class="far fa-envelope"></i> <a href="mailto:scenestarscenes@gmail.com">scenestarscenes@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2348165552184">+234 816 555 2184</a></p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+2349065970693">+234 906 597 0693</a></p>
+                </div>
+            </div>
+
+            <a class="cta-button cta-inline" href="mailto:scenestarscenes@gmail.com?subject=Quote%20request">Request a Quote</a>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- =============================================
        FOOTER SECTION
     ============================================= -->
     <footer>
         <div class="container footer-grid">
-            <div class="footer-column">
-                <h3>Scenestar Scenes</h3>
-                <p>Company Info</p>
-                <p>About Us</p>
+            <div class="footer-column footer-brand">
+                <img src="assets/img/logo.png" alt="Scenestar Scenes Ltd logo" width="96" height="96" loading="lazy">
+                <h3>Scenestar Scenes Ltd</h3>
+                <p>Construction, smart home, security, IT solutions and renewable energy.</p>
             </div>
             <div class="footer-column">
-                <h3>Info</h3>
-                <p>About Us</p>
-                <p>Careers</p>
+                <h3>Explore</h3>
+                <p><a href="#services">Services</a></p>
+                <p><a href="#features">Features</a></p>
+                <p><a href="#pricing">Pricing</a></p>
+                <p><a href="#timeline">Timeline</a></p>
             </div>
             <div class="footer-column">
-                <h3>Links</h3>
-                <p>Blog</p>
-                <p>FAQ</p>
+                <h3>Offices</h3>
+                <p>Lekki, Lagos State</p>
+                <p>Oke Mosan, Abeokuta, Ogun State</p>
             </div>
             <div class="footer-column contact-info">
                 <h3>Contact</h3>
-                <p><i class="far fa-envelope"></i> info@scenestarscenes.com</p>
+                <p><i class="far fa-envelope"></i> <a href="mailto:scenestarscenes@gmail.com">scenestarscenes@gmail.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+2348165552184">+234 816 555 2184</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+2349065970693">+234 906 597 0693</a></p>
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
